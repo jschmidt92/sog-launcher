@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="main-container">
+		<main class="content-default" id="content">
+			<section class="bg-default" id="bg">
+				<div class="col">
+					<div class="brand-body">
+						<div class="brand-logo">
+							<img class="brand-image" src="https://raw.githubusercontent.com/jschmidt92/sog-launcher/master/images/logo.png" alt="...">
+							<h1 class="brand-label-default" id="brandLabel">Tom Clancy's SOG</h1>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="nav-body">
+						<a class="btn" href="https://discord.gg/tTKJDcku" target="_blank"><i class="fab fa-discord fa-2x"></i></a>
+						<a class="btn mx-3" href="https://a3sog.org" target="_blank"><i class="fas fa-globe fa-2x"></i></a>
+						<a class="btn" href="https://a3sog.org" target="_blank"><i class="fas fa-shopping-cart fa-2x"></i></a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="control-body">
+						<button class="btn" id="btnCtl" onclick="togglePlay()"><i class="fas fa-volume-mute fa-2x"></i></button>
+						<button class="btn ms-3" id="btnCollapse" onclick="toggleCollapse()"><i class="fas fa-cog fa-2x"></i></button>
+					</div>
+					<div class="misc-body">
+						<p class="appVersion">v{{ version }}</p>
+					</div>
+				</div>
+			</section>
+			<section class="progress" aria-labelledby="glDownload" id="dlProg" style="display: none;">
+				<h2 class="hidden" id="glDownload">Download</h2>
+				<div class="progress-body" id="dlProgBody">
+					<p class="progress-status" id="dlProgStatus">Downloading...</p>
+					<div class="progress-bar" id="dlProgBar" style="width: 100%;"></div>
+				</div>
+			</section>
+		</main>
+		<aside class="sidebar-default" id="sidebar">
+			<div>
+				<div id="btnJoin">Join Server</div>
+				<button class="btn btn-block" id="btnLaunch" onclick="launch()">Launch Game</button>
+				<button class="btn btn-block" id="btnRefresh" onclick="refreshStatus()">Refresh Status</button>
+				<button class="btn btn-disabled">Mod Version: <span id="version">{{#if installed }}{{ data.version }}{{else}}None{{/if}}</span></button>
+				<section class="card" aria-labelledby="glPreferences">
+					<div class="card-body">
+						<h2 class="card-title" id="glPreferences">Preferences</h2>
+						<form>
+							<div class="form-control">
+								<label for="arma3path">Path to Arma 3 Game Folder</label>
+								<input type="text" name="arma3path" id="arma3path" value="{{ data.arma3path }}">
+							</div>
+						</form>
+					</div>
+				</section>
+				<p class="appStatus" id="appGameStatus"></p>
+				<p class="appStatus" id="appServerStatus"></p>
+			</div>
+		</aside>
+	</div>
+	<audio src="https://raw.githubusercontent.com/jschmidt92/sog-launcher/master/media/stealth.mp3" type="audio/mpeg" id="audioPlayer" loop volume="0.05">
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="renderer.js"></script>
+<script src="js/all.min.js"></script>
+</html>
