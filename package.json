@@ -1,6 +1,6 @@
 {
   "name": "sog-launcher",
-  "version": "1.0.0.1",
+  "version": "1.0.1",
   "description": "SOG Arma 3 Launcher",
   "main": "main.js",
   "author": "Jacob Schmidt",
