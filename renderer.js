@@ -2,7 +2,7 @@ const brandLabel = document.getElementById('brandLabel')
 const btnCollapse = document.getElementById('btnCollapse')
 const btnCtl = document.getElementById('btnCtl')
 const btnJoin = document.getElementById('btnJoin')
-const player = document.getElementById("audioPlayer")
+const player = document.getElementById('audioPlayer')
 
 let isPlaying = false
 let isCollapsed = true
