@@ -24,7 +24,7 @@ function launchGame(arma3path) {
 function openGame(ip, port, join, arma3path) {
 	var child = require('child_process').execFile
 	var exePath = arma3path + "\\arma3_x64.exe"
-	var modList = [`-mod="!Workshop/@ace;!Workshop/@CBA_A3;SOG"`]
+	var modList = [`-mod="!Workshop/@ace;!Workshop/@CBA_A3;!Workshop/@ACE Compat - RHS AFRF;!Workshop/@ACE Compat - RHS- GREF;!Workshop/@ACE Compat - RHS- SAF;!Workshop/@ACE Compat - RHS USAF;!Workshop/@CUP Units;!Workshop/@CUP Weapons;!Workshop/@CUP ACE3 Compatibility Addon - Weapons;!Workshop/@RHSAFRF;!Workshop/@RHSGREF;!Workshop/@RHSPKL;!Workshop/@RHSSAF;!Workshop/@RHSUSAF;!Workshop/@Pythia;!Workshop/@Ghost Recon Third Person;!Workshop/@Ghost Recon CROSSCOM (HUD Only);@sog_gear;sog_client;sog_factions;sog_mod"`]
 
 	if (!join) {
 		var optionList = [`-noSplash -world="empty"`]
