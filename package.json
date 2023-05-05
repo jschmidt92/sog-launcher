@@ -10,7 +10,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "push": "electron-builder -p always"
+    "push": "electron-builder build --win -p always"
   },
   "dependencies": {
     "electron-dl": "^3.3.1",

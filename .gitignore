@@ -3,3 +3,5 @@ logs/
 node_modules/
 out/
 yarn.lock
+*.env
+*.log
