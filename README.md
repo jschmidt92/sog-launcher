@@ -1,5 +1,5 @@
 <p align="center">
-	<!-- <img src="https://raw.githubusercontent.com/jschmidt92/sog-launcher/master/images/logo.png"> -->
+<!-- 	<img src="https://raw.githubusercontent.com/jschmidt92/sog-launcher/master/images/logo.png"> -->
 	<a href="https://github.com/jschmidt92/sog-launcher/releases/latest">
 		<img src="https://img.shields.io/github/v/release/jschmidt92/sog-launcher?label=latest%20release" alt="latest-release">
 	</a>
@@ -14,12 +14,12 @@ This game launcher was created using the latest version of Electron and was desi
 
 If something is broken, contact **JSchmidt92** or open a new issue on **[GitHub](https://github.com/jschmidt92/sog-launcher/issues)**.
 
-</br>
+<!-- </br>
 
 <div align="center" float="left">
 <img src="https://cdn.discordapp.com/attachments/297645618149588992/1030727050266411038/img01.png" alt="preview" width="500" />
 <img src="https://cdn.discordapp.com/attachments/297645618149588992/1030727049905704980/img02.png" alt="preview" width="500" />
-</div>
+</div> -->
 
 </br>
 
